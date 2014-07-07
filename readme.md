@@ -41,7 +41,7 @@ gulp.task('css', function() {
 ## API
 
 [Options](https://github.com/SlexAxton/css-colorguard#programmatic) are passed through to css-colorguard,
-except for `options.logOk` which relates to this gulp plugin behavior only.
+except for `options.logOk` which affects this gulp plugin behavior only.
 
 ### logOk
 
