@@ -1,0 +1,42 @@
+{
+    "name": "gulp-colorguard",
+    "version": "0.1.0",
+    "description": "Keep a watchful eye on your css colors.",
+    "license": "MIT",
+    "repository": "pgilad/gulp-colorguard",
+    "author": {
+        "name": "Gilad Peleg",
+        "email": "giladp007@gmail.com",
+        "url": "https://github.com/pgilad"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "scripts": {
+        "test": "mocha -R spec ./tests/*.js",
+        "watch": "mocha -R spec -w ./tests/*.js"
+    },
+    "files": [
+        "index.js"
+    ],
+    "keywords": [
+        "gulpplugin",
+        "colorguard",
+        "css",
+        "code",
+        "style",
+        "validate",
+        "lint",
+        "check",
+        "checker"
+    ],
+    "dependencies": {
+        "colorguard": "^0.1.3",
+        "gulp-util": "^2.2.0",
+        "through2": "^0.5.1"
+    },
+    "devDependencies": {
+        "expect.js": "^0.3.1",
+        "mocha": "*"
+    }
+}
