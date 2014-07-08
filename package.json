@@ -1,6 +1,6 @@
 {
   "name": "gulp-colorguard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Keep a watchful eye on your css colors.",
   "license": "MIT",
   "repository": "pgilad/gulp-colorguard",
