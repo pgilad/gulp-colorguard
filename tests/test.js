@@ -31,7 +31,9 @@ describe('gulp-colorguard', function () {
 
         stream.on('error', function (err) {
             expect(err.plugin).to.be('gulp-colorguard');
-            expect(err.message).to.contain('#FFFFFF [line: 2] is too close (2.5619493013934016) to #FFFFFA [line: 5]');
+            expect(err.message).to.contain('#fffffa');
+            expect(err.message).to.contain('#ffffff');
+            expect(err.message).to.contain('line: 2');
             cb();
         });
         var file = './tests/fixtures/style.css';
@@ -49,7 +51,9 @@ describe('gulp-colorguard', function () {
         var stream = colorguard();
 
         stream.on('error', function (err) {
-            expect(err.message).to.contain('#FFFFFF [line: 2, 8, 14] is too close (2.5619493013934016) to #FFFFFA [line: 5]');
+            expect(err.message).to.contain('#fffffa');
+            expect(err.message).to.contain('#ffffff');
+            expect(err.message).to.contain('line: 2, 8, 14');
             cb();
         });
         var file = './tests/fixtures/multiple.css';
