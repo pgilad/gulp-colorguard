@@ -1,45 +1,43 @@
 {
-  "name": "gulp-colorguard",
-  "version": "1.0.0",
-  "description": "Keep a watchful eye on your css colors.",
-  "license": "MIT",
-  "repository": "pgilad/gulp-colorguard",
-  "author": {
-    "name": "Gilad Peleg",
-    "email": "giladp007@gmail.com",
-    "url": "http://giladpeleg.com"
-  },
-  "homepage": "https://github.com/pgilad/gulp-colorguard",
-  "bugs": "https://github.com/pgilad/gulp-colorguard/issues",
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha -R spec ./tests/*.js",
-    "watch": "mocha -R spec -w ./tests/*.js"
-  },
-  "keywords": [
-    "gulpplugin",
-    "colorguard",
-    "css",
-    "code",
-    "style",
-    "validate",
-    "lint",
-    "check",
-    "checker"
-  ],
-  "dependencies": {
-    "colorguard": "^0.2.0",
-    "gulp-util": "^3.0.1",
-    "through2": "^0.6.3"
-  },
-  "devDependencies": {
-    "expect.js": "*",
-    "mocha": "*"
-  }
+    "name": "gulp-colorguard",
+    "version": "1.0.0",
+    "description": "Keep a watchful eye on your css colors",
+    "repository": "pgilad/gulp-colorguard",
+    "license": "MIT",
+    "author": {
+        "name": "Gilad Peleg",
+        "email": "giladp007@gmail.com",
+        "url": "http://giladpeleg.com"
+    },
+    "main": "index.js",
+    "files": [
+        "index.js"
+    ],
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "scripts": {
+        "test": "mocha -R spec ./tests/*.js",
+        "watch": "mocha -R spec -w ./tests/*.js"
+    },
+    "keywords": [
+        "gulpplugin",
+        "colorguard",
+        "css",
+        "code",
+        "style",
+        "validate",
+        "lint",
+        "check",
+        "checker"
+    ],
+    "dependencies": {
+        "colorguard": "^0.2.0",
+        "gulp-util": "^3.0.1",
+        "through2": "^0.6.3"
+    },
+    "devDependencies": {
+        "expect.js": "*",
+        "mocha": "*"
+    }
 }

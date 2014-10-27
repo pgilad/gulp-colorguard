@@ -66,4 +66,4 @@ Be verbose and log files that have no collisions. Off by default.
 
 ## License
 
-MIT ©[Gilad Peleg](http://giladpeleg.com)
+MIT @[Gilad Peleg](http://giladpeleg.com)
