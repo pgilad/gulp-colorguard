@@ -58,7 +58,7 @@ except for `options.logOk` which affects this gulp plugin behavior only.
 
 ### logOk
 
-Be verbose and log files that have no collisions. Off be default.
+Be verbose and log files that have no collisions. Off by default.
 
 **Type**: `Boolean`
 
