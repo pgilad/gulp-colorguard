@@ -19,7 +19,6 @@ $ npm install --save-dev gulp-colorguard
 
 ```js
 var gulp = require('gulp');
-var less = require('gulp-less');
 var colorguard = require('gulp-colorguard');
 
 //example with basic css copying
@@ -30,11 +29,25 @@ gulp.task('css', function() {
 });
 
 //example with less-preprocesser
+var less = require('gulp-less');
+
 gulp.task('css', function() {
     gulp.src('./src/less/**/*.less')
         .pipe(less())
         .pipe(colorguard())
         .pipe(gulp.dest('./public/css'));
+});
+
+//example with verbose logging
+gulp.task('css', function() {
+    gulp.src('./src/less/**/*.css')
+        .pipe(colorguard({
+            logOk: true
+        }))
+        .pipe(gulp.dest('./public/css'));
+
+        // then if no errors:
+        // --> main.css has no css color collisions
 });
 ```
 
@@ -45,7 +58,7 @@ except for `options.logOk` which affects this gulp plugin behavior only.
 
 ### logOk
 
-Log files that have no collisions.
+Be verbose and log files that have no collisions. Off be default.
 
 **Type**: `Boolean`
 
@@ -53,4 +66,4 @@ Log files that have no collisions.
 
 ## License
 
-MIT ©2014 **Gilad Peleg**
+MIT ©[Gilad Peleg](http://giladpeleg.com)

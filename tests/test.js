@@ -1,6 +1,6 @@
 /* global describe, it */
 'use strict';
-var expect = require('expect.js')
+var expect = require('expect.js');
 var path = require('path');
 var fs = require('fs');
 
