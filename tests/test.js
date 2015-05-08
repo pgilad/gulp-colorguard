@@ -53,7 +53,7 @@ describe('gulp-colorguard', function () {
         stream.on('error', function (err) {
             expect(err.message).to.contain('#fffffa');
             expect(err.message).to.contain('#ffffff');
-            expect(err.message).to.contain('line: 2, 8, 14');
+            expect(err.message).to.contain('line: 2:11, 8:11, 14:11');
             cb();
         });
         var file = './tests/fixtures/multiple.css';
